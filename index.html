@@ -4,45 +4,54 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Roger Camargo</title>
+    <title></title>
     <link rel="icon" type="image/x-icon" href="assets/favicon-logo.png">
     <link rel="stylesheet" href="css/reset.css"/>
     <link rel="stylesheet" href="css/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
+<header class="cabecalho">
+    <img src="assets/logo-buser.svg" class="logo-buser"/>
+    <button class="entrar">Entrar</button>
+</header>
 <body>
-    <img src="assets/logo-buser.png"/>
-    <button>Entrar</button>
-    <h1 class="titulo-principal">Viagens de ônibus mais baratas que a passagem da rodoviária</h1>
-    <p>Sem taxas, com segurança e preço justo</p>
+    <main>
+        <h1 class="titulo-principal">Viagens de ônibus mais baratas que a passagem da rodoviária</h1>
+        <h2 class="subtitulo">Sem taxas, com segurança e preço justo</h2>
 
+        <form class="escolher-viagem">
+            <label class="saindo-de">Saindo de</label>
+            <div class="container-saindo-de">
+                <img src="assets/icons8-círculo-24.png"/>
+                <input type="text" placeholder="São José dos Campos - SP" list="cidade-saida">
+                <datalist id="cidade-saida">
+                    <option>São José dos campos - SP</option>
+                    <option>São Paulo - SP</option>
+                    <option>Taubaté - SP</option>
+                    <option>Vitória - ES</option>
+                </datalist>
+                <img src="assets/icons8-setas-ordenadas-50.png"/>
+            </div>
 
-    <form>
-        <label>Saindo de</label>
-        <input type="text" placeholder="São José dos Campos - SP" list="cidade-saida">
-        <datalist id="cidade-saida">
-            <option>São José dos campos - SP</option>
-            <option>São Paulo - SP</option>
-            <option>Taubaté - SP</option>
-            <option>Vitória - ES</option>
-        </datalist>
+            <label class="indo-para">Indo para</label>
+            <input type="text" placeholder="São Paulo - SP" list="cidade-chegada">
+            <datalist id="cidade-chegada">
+                <option>São Paulo - SP</option>
+                <option>São José dos campos - SP</option>
+                <option>Taubaté - SP</option>
+                <option>Vitória - ES</option>
+            </datalist>
 
-        <label>Indo para</label>
-        <input type="text" placeholder="São Paulo - SP" list="cidade-chegada">
-        <datalist id="cidade-chegada">
-            <option>São Paulo - SP</option>
-            <option>São José dos campos - SP</option>
-            <option>Taubaté - SP</option>
-            <option>Vitória - ES</option>
-        </datalist>
+            <label>Data de ida</label>
+            <input type="date" placeholder="Ida">
+            <label>Data de volta</label>
+            <input type="date" placeholder="Volta">
 
-        <label>Data de ida</label>
-        <input type="date" placeholder="Ida">
-        <label>Data de volta</label>
-        <input type="date" placeholder="Volta">
-
-        <input type="submit" value="Buscar">
-    </form>
-
+            <input type="submit" value="Buscar">
+        </form>
+    </main>
 </body>
 <footer>
     <nav>
