@@ -24,30 +24,34 @@
         <form class="escolher-viagem">
             <label class="saindo-de">Saindo de</label>
             <div class="container-saindo-de">
-                <img src="assets/icons8-círculo-24.png"/>
-                <input type="text" placeholder="São José dos Campos - SP" list="cidade-saida">
+                <img class="imagem-circulo" src="assets/icons8-círculo-24.png"/>
+                <input class="input-cidade" type="text" placeholder="São José dos Campos - SP" list="cidade-saida">
                 <datalist id="cidade-saida">
                     <option>São José dos campos - SP</option>
                     <option>São Paulo - SP</option>
                     <option>Taubaté - SP</option>
                     <option>Vitória - ES</option>
                 </datalist>
-                <img src="assets/icons8-setas-ordenadas-50.png"/>
+                <img class="imagem-setas" src="assets/icons8-setas-ordenadas-50.png"/>
             </div>
 
             <label class="indo-para">Indo para</label>
-            <input type="text" placeholder="São Paulo - SP" list="cidade-chegada">
-            <datalist id="cidade-chegada">
-                <option>São Paulo - SP</option>
-                <option>São José dos campos - SP</option>
-                <option>Taubaté - SP</option>
-                <option>Vitória - ES</option>
-            </datalist>
-
+            <div class="container-indo-para">
+                <img class="imagem-geotag" src="assets/icons8-marcador-50.png">
+                <input class="input-cidade" type="text" placeholder="São Paulo - SP" list="cidade-chegada">
+                <datalist id="cidade-chegada">
+                    <option>São Paulo - SP</option>
+                    <option>São José dos campos - SP</option>
+                    <option>Taubaté - SP</option>
+                    <option>Vitória - ES</option>
+                </datalist>
+            </div>
+        
             <label>Data de ida</label>
-            <input type="date" placeholder="Ida">
+            <input type="date" placeholder="Ida" class="input-data">
+
             <label>Data de volta</label>
-            <input type="date" placeholder="Volta">
+            <input type="date" placeholder="Volta" class="input-data">
 
             <input type="submit" value="Buscar">
         </form>

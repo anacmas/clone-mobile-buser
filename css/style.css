@@ -16,7 +16,7 @@ html {
 }
 
 .logo-buser {
-    height: 70%;
+    height: 1.5rem;
     align-self: center;
 }
 
@@ -62,8 +62,30 @@ main {
     font-weight: 700;
 }
 
-.container-saindo-de {
+.container-saindo-de, .container-indo-para {
     border-style: solid;
     border-width: 1px;
     border-color: #c1c1c1;
+    padding: 0.3rem;
+}
+
+.imagem-circulo {
+    width: 0.7rem;
+}
+
+.input-cidade {
+    border: none;
+}
+
+.imagem-setas, .imagem-geotag {
+    width: 1rem;
+}
+
+.input-data {
+    display: flex;
+    flex-direction: row-reverse;
+    border-width: 1px;
+    border-color: none;
+    border-color: #c1c1c1;
+
 }
