@@ -57,20 +57,27 @@ main {
     flex-direction: column;
 }
 
-.saindo-de, .indo-para {
+.texto-label {
     font-size: 0.8rem;
     font-weight: 700;
+    margin-top: 1rem;
+    color: #424242;
 }
 
-.container-saindo-de, .container-indo-para {
+.container {
     border-style: solid;
     border-width: 1px;
     border-color: #c1c1c1;
     padding: 0.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0.7rem;
 }
 
 .imagem-circulo {
     width: 0.7rem;
+    height: 0.7rem;
 }
 
 .input-cidade {
@@ -81,11 +88,17 @@ main {
     width: 1rem;
 }
 
+.imagem-setas {
+    vertical-align: bottom;
+}
+
+.espaco-vazio {
+    width: 16px;
+    height: 16px;
+}
+
 .input-data {
     display: flex;
     flex-direction: row-reverse;
-    border-width: 1px;
-    border-color: none;
-    border-color: #c1c1c1;
-
+    border: none;
 }

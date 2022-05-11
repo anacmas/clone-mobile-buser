@@ -22,8 +22,8 @@
         <h2 class="subtitulo">Sem taxas, com segurança e preço justo</h2>
 
         <form class="escolher-viagem">
-            <label class="saindo-de">Saindo de</label>
-            <div class="container-saindo-de">
+            <label class="texto-label">Saindo de</label>
+            <div class="container">
                 <img class="imagem-circulo" src="assets/icons8-círculo-24.png"/>
                 <input class="input-cidade" type="text" placeholder="São José dos Campos - SP" list="cidade-saida">
                 <datalist id="cidade-saida">
@@ -35,8 +35,8 @@
                 <img class="imagem-setas" src="assets/icons8-setas-ordenadas-50.png"/>
             </div>
 
-            <label class="indo-para">Indo para</label>
-            <div class="container-indo-para">
+            <label class="texto-label">Indo para</label>
+            <div class="container">
                 <img class="imagem-geotag" src="assets/icons8-marcador-50.png">
                 <input class="input-cidade" type="text" placeholder="São Paulo - SP" list="cidade-chegada">
                 <datalist id="cidade-chegada">
@@ -45,13 +45,18 @@
                     <option>Taubaté - SP</option>
                     <option>Vitória - ES</option>
                 </datalist>
+                <div class="espaco-vazio"></div>
             </div>
         
-            <label>Data de ida</label>
-            <input type="date" placeholder="Ida" class="input-data">
+            <label class="texto-label">Data de ida</label>
+            <div class="container">
+                <input type="date" placeholder="Ida" class="input-data">
+            </div>
 
-            <label>Data de volta</label>
-            <input type="date" placeholder="Volta" class="input-data">
+            <label class="texto-label">Data de volta</label>
+            <div class="container">
+                <input type="date" placeholder="Volta" class="input-data">
+            </div>
 
             <input type="submit" value="Buscar">
         </form>
