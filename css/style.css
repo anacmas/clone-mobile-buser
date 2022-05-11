@@ -1,5 +1,5 @@
 :root {
-    --rosa-buser: #f15077;
+    --rosa-buser: #ff0778;
     --roboto: 'Roboto', sans-serif;
 }
 
@@ -76,10 +76,12 @@ main {
     display: flex;
     align-items: center;
     padding: 0.7rem 0.7rem;
+    border-radius: 5px;
+    margin-top: 0.1rem;
 }
 
 .imagens-esquerda-input {
-    margin-right: 1rem;
+    margin-right: 0.5rem;
 }
 
 .imagem-circulo {
@@ -117,5 +119,45 @@ main {
 .imagem-calendario {
     width: 1rem;
     height: 1rem;
-    opacity: 80%;
+    opacity: 60%;
+}
+
+.botao-buscar {
+    background-color: var(--rosa-buser);
+    margin-top: 0.7rem;
+    color: #FFFFFF;
+    border-width: 1px;
+    border-color: #ad1457;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.botao-buscar svg {
+    width: 0.9rem;
+    height: 0.9rem;
+    margin-right: 0.3rem;
+}
+
+.menu-inferior {
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.7rem;
+    margin: 0.8rem 0;
+
+
+}
+
+.menu-inferior img {
+    width: 1.2rem;
+}
+
+.link-menu-inferior {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #424242;
+    text-decoration: none;
 }
