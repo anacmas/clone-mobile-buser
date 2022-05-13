@@ -18,6 +18,7 @@ html {
 .logo-buser {
     height: 1.5rem;
     align-self: center;
+    cursor: pointer;
 }
 
 .entrar {
@@ -27,6 +28,17 @@ html {
     height: 70%;
     color: var(--rosa-buser);
     font-weight: 700;
+    cursor: pointer;
+}
+
+.entrar:hover {
+    opacity: 60%;
+    transition: 0.3s;
+}
+
+.entrar:active{
+    color: #5c0a2d;
+    transition: 0.3s;
 }
 
 main {
@@ -80,6 +92,10 @@ main {
     margin-top: 0.1rem;
 }
 
+.imagem-icons-8 {
+    cursor: default;
+}
+
 .imagens-esquerda-input {
     margin-right: 0.5rem;
 }
@@ -109,7 +125,8 @@ main {
 .input-data {
     border: none;
     width: 100%;
-    opacity: 80%;;
+    opacity: 80%;
+    cursor: pointer;
 }
 
 .input-data:focus {
@@ -134,7 +151,18 @@ main {
     align-items: center;
     justify-content: center;
     padding: 0.7rem 0;
+    cursor: pointer;
 }
+
+.botao-buscar:hover {
+    opacity: 80%;
+}
+
+.botao-buscar:active {
+    opacity: 50%;
+    transition: 0.3s;
+}
+
 
 .botao-buscar svg {
     width: 0.9rem;
@@ -142,12 +170,12 @@ main {
     margin-right: 0.3rem;
 }
 
-
 .menu-inferior {
     display: flex;
     justify-content: space-around;
     font-size: 0.7rem;
     margin: 0.8rem 0;
+    background-color: #FFFFFF;
 }
 
 .menu-inferior img {
@@ -162,6 +190,16 @@ main {
     text-decoration: none;
 }
 
+.link-menu-inferior:hover {
+    opacity: 70%;
+    transition: 0.3s;
+}
+
+.link-menu-inferior:active {
+    opacity: 50%;
+    transition: 0.3s;
+}
+
 @media (min-width: 450px) {
     body {
         max-width: 450px;
@@ -173,5 +211,9 @@ main {
 
     .cabecalho {
         border-radius: 15px 15px 0 0;
+    }
+
+    footer {
+        padding-bottom: 0.4rem;
     }
 }
