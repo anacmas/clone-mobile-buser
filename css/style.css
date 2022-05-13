@@ -164,14 +164,16 @@ main {
 
 @media (min-width: 450px) {
     body {
-        border-style: solid;
         max-width: 450px;
-        border-width: 1px;
-        border-color: #c1c1c1;
-        border-radius: 10px;
+        border-radius: 15px;
         display: flex;
         flex-direction: column;
         margin: auto;
         margin-top: 2%;
+        box-shadow: 2px 2px 15px 10px #eeeeee;
+    }
+
+    .cabecalho {
+        border-radius: 15px 15px 0 0;
     }
 }
