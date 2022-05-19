@@ -44,10 +44,11 @@ html {
 main {
     background-color: var(--rosa-buser);
     padding: 1.5rem;
+    height: 100%;
 }
 
 .titulo-principal {
-    color: #FFFFFF;
+    color: #e4d01d;
     text-transform: uppercase;
     font-weight: 500;
     font-size: 1.7rem;
@@ -174,8 +175,9 @@ main {
     display: flex;
     justify-content: space-around;
     font-size: 0.7rem;
-    margin: 0.8rem 0;
+    padding: 0.8rem 0;
     background-color: #FFFFFF;
+    position: fixed;
 }
 
 .menu-inferior img {
@@ -200,6 +202,7 @@ main {
     transition: 0.3s;
 }
 
+
 @media (min-width: 450px) {
     body {
         max-width: 450px;
@@ -215,5 +218,6 @@ main {
 
     footer {
         padding-bottom: 0.4rem;
+    
     }
 }
