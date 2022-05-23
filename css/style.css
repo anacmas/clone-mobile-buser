@@ -11,14 +11,17 @@ html {
     height: 42px;
     display: flex;
     justify-content: space-between;
-    padding: 0.2rem 1.5rem;
+    padding: 0.2rem;
     background-color: #FFFFFF;
+    position: fixed;
+    width: 100%;
 }
 
 .logo-buser {
     height: 1.5rem;
     align-self: center;
     cursor: pointer;
+    margin: 0 1.5rem;
 }
 
 .entrar {
@@ -29,6 +32,7 @@ html {
     color: var(--rosa-buser);
     font-weight: 700;
     cursor: pointer;
+    margin: 0 1.5rem;
 }
 
 .entrar:hover {
@@ -43,7 +47,8 @@ html {
 
 main {
     background-color: var(--rosa-buser);
-    padding: 1.5rem;
+    padding: 4.5rem 1.5rem 13rem 1.5rem;
+    border-radius: 20px;
 }
 
 .titulo-principal {
@@ -174,8 +179,12 @@ main {
     display: flex;
     justify-content: space-around;
     font-size: 0.7rem;
-    margin: 0.8rem 0;
+    padding: 0.8rem 0;
     background-color: #FFFFFF;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 .menu-inferior img {
@@ -204,16 +213,20 @@ main {
     body {
         max-width: 450px;
         border-radius: 15px;
-        margin: auto;
-        margin-top: 2%;
+        display: flex;
+        justify-content: center;
         box-shadow: 2px 2px 15px 10px #eeeeee;
     }
 
+
     .cabecalho {
         border-radius: 15px 15px 0 0;
+        max-width: 450px;
+        padding: 0;
     }
 
-    footer {
+    .menu-inferior  {
         padding-bottom: 0.4rem;
+        max-width: 450px;
     }
 }
