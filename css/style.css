@@ -211,9 +211,9 @@ main {
 
 
 @media (min-width: 450px) {
+   
     body {
         max-width: 450px;
-        border-radius: 15px;
         display: flex;
         justify-content: center;
         box-shadow: 2px 2px 15px 10px #eeeeee;
@@ -221,7 +221,6 @@ main {
 
 
     .cabecalho {
-        border-radius: 15px 15px 0 0;
         max-width: 450px;
         padding: 0;
     }
