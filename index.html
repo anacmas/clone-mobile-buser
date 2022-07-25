@@ -16,72 +16,74 @@
     <img src="assets/logo-buser.svg" class="logo-buser"/>
     <button class="entrar">Entrar</button>
 </header>
-<body>
-    <main style="    
-    background-image: url('./assets/background-buser.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;">
-        <h1 class="titulo-principal">Viagens de ônibus mais baratas que a passagem da rodoviária</h1>
-        <h2 class="subtitulo">Sem taxas, com segurança e preço justo</h2>
+<div class="conteudo">
+    <body>
+        <main style="    
+        background-image: url('./assets/background-buser.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;">
+            <h1 class="titulo-principal">Viagens de ônibus mais baratas que a passagem da rodoviária</h1>
+            <h2 class="subtitulo">Sem taxas, com segurança e preço justo</h2>
 
-        <form class="escolher-viagem">
-            <label class="texto-label">Saindo de</label>
-            <div class="container">
-                <a class="imagem-icons-8" href="https://icons8.com.br/" target="_blank"><img class="imagem-circulo imagens-esquerda-input" src="assets/icons8-círculo-24.png"/></a>
-                <input class="input-cidade" type="text" placeholder="São José dos Campos - SP" list="cidade-saida">
-                <datalist id="cidade-saida">
-                    <option>São José dos campos - SP</option>
-                    <option>São Paulo - SP</option>
-                    <option>Taubaté - SP</option>
-                    <option>Vitória - ES</option>
-                </datalist>
+            <form class="escolher-viagem">
+                <label class="texto-label">Saindo de</label>
+                <div class="container">
+                    <a class="imagem-icons-8" href="https://icons8.com.br/" target="_blank"><img class="imagem-circulo imagens-esquerda-input" src="assets/icons8-círculo-24.png"/></a>
+                    <input class="input-cidade" type="text" placeholder="São José dos Campos - SP" list="cidade-saida">
+                    <datalist id="cidade-saida">
+                        <option>São José dos campos - SP</option>
+                        <option>São Paulo - SP</option>
+                        <option>Taubaté - SP</option>
+                        <option>Vitória - ES</option>
+                    </datalist>
+                    <div class="espaco-vazio"></div>
+                    <a class="imagem-icons-8" href="https://icons8.com.br/" target="_blank"><img class="imagem-setas" src="assets/icons8-setas-ordenadas-50.png"/></a>
+                </div>
+
+                <label class="texto-label">Indo para</label>
+                <div class="container">
+                    <a class="imagem-icons-8" href="https://icons8.com.br/" target="_blank"><img class="imagem-geotag imagens-esquerda-input" src="assets/icons8-marcador-50.png"></a>
+                    <input class="input-cidade" type="text" placeholder="São Paulo - SP" list="cidade-chegada">
+                    <datalist id="cidade-chegada">
+                        <option>São Paulo - SP</option>
+                        <option>São José dos campos - SP</option>
+                        <option>Taubaté - SP</option>
+                        <option>Vitória - ES</option>
+                    </datalist>
                 <div class="espaco-vazio"></div>
-                <a class="imagem-icons-8" href="https://icons8.com.br/" target="_blank"><img class="imagem-setas" src="assets/icons8-setas-ordenadas-50.png"/></a>
-            </div>
 
-            <label class="texto-label">Indo para</label>
-            <div class="container">
-                <a class="imagem-icons-8" href="https://icons8.com.br/" target="_blank"><img class="imagem-geotag imagens-esquerda-input" src="assets/icons8-marcador-50.png"></a>
-                <input class="input-cidade" type="text" placeholder="São Paulo - SP" list="cidade-chegada">
-                <datalist id="cidade-chegada">
-                    <option>São Paulo - SP</option>
-                    <option>São José dos campos - SP</option>
-                    <option>Taubaté - SP</option>
-                    <option>Vitória - ES</option>
-                </datalist>
-            <div class="espaco-vazio"></div>
+                </div>
+            
+                <label class="texto-label">Data de ida</label>
+                <div class="container">
+                    <a class="imagem-icons-8" href="https://icons8.com.br/" target="_blank"><img src="assets/icons8-calendário-48.png" class="imagem-calendario imagens-esquerda-input"/></a>
+                    <input placeholder="Ida"  class="input-data" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date" />
 
-            </div>
-        
-            <label class="texto-label">Data de ida</label>
-            <div class="container">
-                <a class="imagem-icons-8" href="https://icons8.com.br/" target="_blank"><img src="assets/icons8-calendário-48.png" class="imagem-calendario imagens-esquerda-input"/></a>
-                <input placeholder="Ida"  class="input-data" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date" />
+                </div>
 
-            </div>
+                <label class="texto-label">Data de volta</label>
+                <div class="container">
+                    <a class="imagem-icons-8" href="https://icons8.com.br/" target="_blank"><img src="assets/icons8-calendário-48.png" class="imagem-calendario imagens-esquerda-input"/></a>
+                    <input placeholder="Volta" class="input-data" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date"/>
+                </div>
 
-            <label class="texto-label">Data de volta</label>
-            <div class="container">
-                <a class="imagem-icons-8" href="https://icons8.com.br/" target="_blank"><img src="assets/icons8-calendário-48.png" class="imagem-calendario imagens-esquerda-input"/></a>
-                <input placeholder="Volta" class="input-data" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date"/>
-            </div>
-
-            <button type="submit" class="botao-buscar"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="44" height="44" viewBox="0 0 24 24" stroke-width="3" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <circle cx="10" cy="10" r="7" />
-                <line x1="21" y1="21" x2="15" y2="15" />
-              </svg>Buscar</button>
-        </form>
-    </main>
-</body>
-<footer>
-    <nav class="menu-inferior">
-        <a class="link-menu-inferior" href="https://icons8.com.br/" target="_blank"><img src="assets/icons8-pesquisar-50.png">Buscar</a>
-        <a class="link-menu-inferior" href="https://icons8.com.br/" target="_blank"><img src="assets/icons8-ônibus-50.png">Viagens</a>
-        <a class="link-menu-inferior" href="https://icons8.com.br/" target="_blank"><img src="assets/icons8-carteira-50.png">Carteira</a>
-        <a class="link-menu-inferior" href="https://icons8.com.br/" target="_blank"><img src="assets/icons8-desconto-50.png">Promoções</a>
-        <a class="link-menu-inferior" href="https://icons8.com.br/" target="_blank"><img src="assets/icons8-ajuda-50.png">Ajuda</a>
-    </nav>
-</footer>
+                <button type="submit" class="botao-buscar"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="44" height="44" viewBox="0 0 24 24" stroke-width="3" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <circle cx="10" cy="10" r="7" />
+                    <line x1="21" y1="21" x2="15" y2="15" />
+                </svg>Buscar</button>
+            </form>
+        </main>
+    </body>
+    <footer>
+        <nav class="menu-inferior">
+            <a class="link-menu-inferior" href="https://icons8.com.br/" target="_blank"><img src="assets/icons8-pesquisar-50.png">Buscar</a>
+            <a class="link-menu-inferior" href="https://icons8.com.br/" target="_blank"><img src="assets/icons8-ônibus-50.png">Viagens</a>
+            <a class="link-menu-inferior" href="https://icons8.com.br/" target="_blank"><img src="assets/icons8-carteira-50.png">Carteira</a>
+            <a class="link-menu-inferior" href="https://icons8.com.br/" target="_blank"><img src="assets/icons8-desconto-50.png">Promoções</a>
+            <a class="link-menu-inferior" href="https://icons8.com.br/" target="_blank"><img src="assets/icons8-ajuda-50.png">Ajuda</a>
+        </nav>
+    </footer>
+</div>
 </html>

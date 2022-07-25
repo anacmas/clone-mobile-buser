@@ -212,6 +212,12 @@ main {
 
 @media (min-width: 450px) {
    
+    html {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
     body {
         max-width: 450px;
         display: flex;
@@ -219,6 +225,9 @@ main {
         box-shadow: 2px 2px 15px 10px #eeeeee;
     }
 
+    main {
+        border-radius: 0px;
+    }
 
     .cabecalho {
         max-width: 450px;
@@ -226,7 +235,9 @@ main {
     }
 
     .menu-inferior  {
+        position: relative;
         padding-bottom: 0.4rem;
         max-width: 450px;
+        border-radius: 0 0 10px 10px;
     }
 }
