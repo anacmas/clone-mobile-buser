@@ -1,4 +1,4 @@
-Projeto de cópia do site mobile de compras da Buser com a utilização de inputs
+Clone do frontend do site mobile da <a href"https://www.buser.com.br/">Buser</a>
 
 Copyright icones by Icons8: https://icons8.com
 
